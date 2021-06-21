@@ -15,3 +15,5 @@ const validate = (schema: AnySchema) => async (req: Request, res: Response, next
         return res.status(400).send(error.errors);
     }
 }
+
+export default validate;
